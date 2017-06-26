@@ -1,0 +1,302 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100%;
+  font-size: 1px;
+  overflow-X: hidden;
+  background-color: #343434; }
+
+a {
+  text-decoration: none; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+h1, h2, h3, p, a {
+  font-family: sans-serif; }
+
+@font-face {
+  font-family: 'si';
+  src: url("../assets/icons/socicon.eot");
+  src: url("../assets/icons/socicon.eot?#iefix") format("embedded-opentype"), url("../assets/icons/socicon.woff") format("woff"), url("../assets/icons/socicon.ttf") format("truetype"), url("../assets/icons/socicon.svg#icomoonregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: si;
+    src: url(PATH_TO/socicon.svg) format(svg); } }
+.soc {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.soc li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1; }
+
+.soc li a {
+  font-family: si !important;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -o-transition: .1s;
+  -ms-transition: .1s;
+  -moz-transition: .1s;
+  -webkit-transition: .1s;
+  transition: .1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 22px;
+  -webkit-border-radius: 86px;
+  -moz-border-radius: 86px;
+  border-radius: 86px;
+  margin-right: 10px;
+  color: #ffffff;
+  background-color: #000; }
+
+.soc a:hover {
+  z-index: 2;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: transform 0.5s; }
+
+.soc-icon-last {
+  margin: 0 !important; }
+
+.soc-facebook:before {
+  content: '\e041'; }
+
+.soc-instagram:before {
+  content: '\e057'; }
+
+.soc-twitter:before {
+  content: '\e040'; }
+
+header {
+  z-index: 4; }
+  header.mini {
+    position: absolute; }
+    header.mini .header-container {
+      opacity: 0.5; }
+    header.mini nav {
+      display: none; }
+  header.clone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-100%);
+    transition: 0.2s transform cubic-bezier(0.3, 0.73, 0.3, 0.74); }
+
+body.down header.clone {
+  transform: translateY(0);
+  background: rgba(242, 242, 240, 0.8); }
+  body.down header.clone .header-container {
+    max-width: 748px;
+    margin: 0 auto; }
+    body.down header.clone .header-container .logo {
+      width: 247px;
+      margin: 0 auto; }
+      body.down header.clone .header-container .logo img {
+        height: 115px; }
+    body.down header.clone .header-container nav {
+      text-align: center; }
+      body.down header.clone .header-container nav a {
+        text-transform: uppercase;
+        color: #000;
+        font-size: 17px;
+        font-weight: bold;
+        width: 14%;
+        display: inline-block; }
+        body.down header.clone .header-container nav a:hover {
+          color: #0096B4;
+          transition: color 0.2s; }
+
+.hero {
+  height: 450px;
+  width: 100%;
+  background-image: url(../assets/shop.jpg);
+  background-position: 10px -243px; }
+  .hero .hero-text {
+    background: #fff;
+    font-weight: 900;
+    padding: 10px;
+    max-width: 748px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .hero .hero-text h1 {
+      font-size: 34px; }
+
+#accordion {
+  height: 725px;
+  width: 100%;
+  border: 1px solid; }
+  #accordion ul {
+    width: 100%;
+    height: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0; }
+    #accordion ul li:nth-child(1) {
+      background-image: url(../assets/skate.jpg);
+      background-position: 45% 0; }
+    #accordion ul li:nth-child(2) {
+      background-image: url(../assets/surf.jpg); }
+    #accordion ul li:nth-child(3) {
+      background-image: url(../assets/snowboard.jpg);
+      background-position: 17% 0; }
+    #accordion ul li:nth-child(4) {
+      background-image: url(../assets/sup.jpg);
+      background-position: 42% 0; }
+    #accordion ul li:nth-child(5) {
+      background-image: url(../assets/windsurf.jpg); }
+    #accordion ul li {
+      border: 1px solid;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: table-cell;
+      vertical-align: bottom;
+      position: relative;
+      width: 16.666%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: all 500ms ease; }
+      #accordion ul li .block {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 100%; }
+        #accordion ul li .block a {
+          display: block;
+          height: 100%;
+          width: 100%;
+          position: relative;
+          z-index: 3;
+          vertical-align: bottom;
+          padding: 15px 20px;
+          box-sizing: border-box;
+          color: #fff;
+          text-decoration: none;
+          font-family: Open Sans, sans-serif;
+          transition: all 200ms ease; }
+          #accordion ul li .block a * {
+            opacity: 0;
+            margin: 0;
+            width: 100%;
+            text-overflow: ellipsis;
+            position: relative;
+            z-index: 5;
+            white-space: nowrap;
+            overflow: hidden;
+            -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+            -webkit-transition: all 400ms ease;
+            transition: all 400ms ease; }
+          #accordion ul li .block a h2 {
+            font-family: Montserrat, sans-serif;
+            text-overflow: clip;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+            top: 160px; }
+          #accordion ul li .block a p {
+            top: 160px;
+            font-size: 13.5px; }
+    #accordion ul:hover li {
+      width: 8%; }
+      #accordion ul:hover li:hover {
+        width: 60%; }
+        #accordion ul:hover li:hover a {
+          background: rgba(0, 0, 0, 0.4); }
+          #accordion ul:hover li:hover a * {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            transform: translateX(0); }
+
+.brands {
+  height: 500px;
+  background-image: url(../assets/bg_wood.jpg); }
+  .brands .inner {
+    max-width: 748px;
+    margin: 0 auto;
+    padding-top: 15vh; }
+    .brands .inner .brand-logo {
+      display: inline-block;
+      width: auto;
+      height: 58px;
+      margin: 16px 14px 16px 0; }
+
+#footer {
+  width: 100%;
+  height: 200px;
+  background: black;
+  padding: 40px 0 0 0; }
+  #footer .inner {
+    width: calc(100% - 140px);
+    height: 100%;
+    border-top: 1px solid #0B8A97;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    text-align: center; }
+    #footer .inner h3 {
+      color: white; }
+    #footer .inner .telephone, #footer .inner .info, #footer .inner .hours, #footer .inner .soc {
+      float: left;
+      display: block;
+      width: 25%; }
+    #footer .inner .soc li {
+      margin-top: -9px; }
+    #footer .inner .copyright {
+      text-align: center; }
+
+.intro-container {
+  height: 100vh;
+  width: 100%;
+  position: relative; }
+  .intro-container .intro-overlay {
+    position: absolute;
+    background: rgba(166, 154, 152, 0.4);
+    height: 100%;
+    width: 100%;
+    top: 0; }
+  .intro-container .buttons {
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    position: absolute;
+    bottom: 30px;
+    left: auto;
+    right: 50%; }
+
+/*# sourceMappingURL=styles.css.map */

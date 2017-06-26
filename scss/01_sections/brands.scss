@@ -1,0 +1,19 @@
+.brands {
+  height: 500px;
+  background-image: url(../assets/bg_wood.jpg);
+  .inner {
+    max-width: 748px;
+    margin: 0 auto;
+    padding-top: 15vh;
+    // position: relative;
+    // top: 50%;
+    // -webkit-transform: translateY(-50%);
+    //         transform: translateY(-50%);
+    .brand-logo {
+      display: inline-block;
+      width: auto;
+      height: 58px;
+      margin: 16px 14px 16px 0;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+h1,h2,h3,p,a {
+  font-family: sans-serif;
+}
+@font-face {
+    font-family: 'si';
+    src: url('../assets/icons/socicon.eot');
+    src: url('../assets/icons/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../assets/icons/socicon.woff') format('woff'),
+         url('../assets/icons/socicon.ttf') format('truetype'),
+         url('../assets/icons/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(PATH_TO/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    -webkit-border-radius: 86px;
+    -moz-border-radius: 86px;
+    border-radius: 86px;
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: #000;
+}
+
+.soc a:hover {
+    z-index: 2;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-facebook:before {
+    content:'\e041';
+}
+.soc-instagram:before {
+    content:'\e057';
+}
+.soc-twitter:before {
+    content:'\e040';
+}
