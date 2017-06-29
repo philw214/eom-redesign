@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600");
 * {
   padding: 0;
   margin: 0;
@@ -19,8 +20,13 @@ a {
   font-size: 100%;
   vertical-align: baseline; }
 
-h1, h2, h3, p, a {
-  font-family: sans-serif; }
+h1,
+h2,
+h3,
+span,
+p,
+a {
+  font-family: 'Josefin Sans', sans-serif; }
 
 @font-face {
   font-family: 'si';
@@ -98,6 +104,30 @@ h1, h2, h3, p, a {
 .soc-twitter:before {
   content: '\e040'; }
 
+.intro-container {
+  height: 100vh;
+  width: 100%;
+  position: relative; }
+  .intro-container .intro-button {
+    max-width: 180px;
+    text-align: center;
+    position: relative;
+    left: 15%;
+    bottom: 30%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    z-index: 4; }
+    .intro-container .intro-button.continue {
+      bottom: 20%; }
+    .intro-container .intro-button a {
+      font-size: 20px;
+      font-weight: 600;
+      color: #0B8A97;
+      display: block;
+      height: 100%;
+      width: 100%; }
+
 header {
   z-index: 4; }
   header.mini {
@@ -138,15 +168,25 @@ body.down header.clone {
           color: #0096B4;
           transition: color 0.2s; }
 
+#main-content {
+  padding-top: 20px;
+  background: #000; }
+
 .hero {
   height: 450px;
   width: 100%;
+  margin-top: 50px;
   background-image: url(../assets/shop.jpg);
   background-position: 10px -243px; }
+  .hero .hero-overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); }
   .hero .hero-text {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.6);
+    color: #292929;
     font-weight: 900;
-    padding: 10px;
+    padding: 20px;
     max-width: 748px;
     margin: 0 auto;
     position: relative;
@@ -154,7 +194,10 @@ body.down header.clone {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
     .hero .hero-text h1 {
-      font-size: 34px; }
+      font-size: 34px;
+      font-weight: 600; }
+    .hero .hero-text p {
+      font-size: 19px; }
 
 #accordion {
   height: 725px;
@@ -224,21 +267,19 @@ body.down header.clone {
             -webkit-transition: all 400ms ease;
             transition: all 400ms ease; }
           #accordion ul li .block a h2 {
-            font-family: Montserrat, sans-serif;
-            text-overflow: clip;
-            font-size: 24px;
+            font-size: 36px;
             text-transform: uppercase;
             margin-bottom: 2px;
             top: 160px; }
           #accordion ul li .block a p {
             top: 160px;
-            font-size: 13.5px; }
+            font-size: 19px; }
     #accordion ul:hover li {
       width: 8%; }
       #accordion ul:hover li:hover {
         width: 60%; }
         #accordion ul:hover li:hover a {
-          background: rgba(0, 0, 0, 0.4); }
+          background: rgba(0, 0, 0, 0.5); }
           #accordion ul:hover li:hover a * {
             opacity: 1;
             -webkit-transform: translateX(0);
@@ -251,6 +292,11 @@ body.down header.clone {
     max-width: 748px;
     margin: 0 auto;
     padding-top: 15vh; }
+    .brands .inner h2 {
+      text-align: center;
+      font-size: 34px;
+      color: #0B8A97;
+      text-transform: uppercase; }
     .brands .inner .brand-logo {
       display: inline-block;
       width: auto;
@@ -279,24 +325,5 @@ body.down header.clone {
       margin-top: -9px; }
     #footer .inner .copyright {
       text-align: center; }
-
-.intro-container {
-  height: 100vh;
-  width: 100%;
-  position: relative; }
-  .intro-container .intro-overlay {
-    position: absolute;
-    background: rgba(166, 154, 152, 0.4);
-    height: 100%;
-    width: 100%;
-    top: 0; }
-  .intro-container .buttons {
-    width: 100px;
-    height: 100px;
-    z-index: 3;
-    position: absolute;
-    bottom: 30px;
-    left: auto;
-    right: 50%; }
 
 /*# sourceMappingURL=styles.css.map */

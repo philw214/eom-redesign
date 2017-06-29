@@ -1,12 +1,23 @@
+#main-content {
+  padding-top: 20px;
+  background: #000;
+}
 .hero {
   height: 450px;
   width: 100%;
+  margin-top: 50px;
   background-image: url(../assets/shop.jpg);
   background-position: 10px -243px;
+  .hero-overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
   .hero-text {
-    background: #fff;
+    background: rgba(255,255,255,0.6);
+    color: #292929;
     font-weight: 900;
-    padding: 10px;
+    padding: 20px;
     max-width: 748px;
     margin: 0 auto;
     position: relative;
@@ -15,6 +26,10 @@
             transform: translateY(-50%);
     h1 {
       font-size: 34px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 19px;
     }
   }
 }
