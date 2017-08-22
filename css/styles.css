@@ -182,7 +182,7 @@ body.down header.clone {
   background: #000; }
 
 .hero {
-  height: 450px;
+  height: 500px;
   width: 100%;
   margin-top: 50px;
   background-image: url(../assets/shop.jpg);
@@ -266,7 +266,6 @@ body.down header.clone {
             opacity: 0;
             margin: 0;
             width: 100%;
-            text-overflow: ellipsis;
             position: relative;
             z-index: 5;
             white-space: nowrap;
@@ -297,10 +296,14 @@ body.down header.clone {
 @media screen and (max-width: 600px) {
   #accordion {
     height: auto; }
+    #accordion a {
+      background: rgba(0, 0, 0, 0.5); }
 
+  #accordion ul li .block a * {
+    opacity: 1; }
   #accordion ul li .block a h2 {
     top: 87px;
-    font-size: 28px; }
+    font-size: 21px; }
   #accordion ul li .block a p {
     top: 90px; }
 
@@ -331,7 +334,7 @@ body.down header.clone {
       display: inline-block;
       width: 100px;
       height: 58px;
-      margin: 16px 6px 16px 13px; }
+      margin: 16px 5px 16px 5px; }
 
 #footer {
   width: 100%;

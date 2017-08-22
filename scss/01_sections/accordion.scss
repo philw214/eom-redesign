@@ -48,7 +48,6 @@
             opacity: 0;
             margin: 0;
             width: 100%;
-            text-overflow: ellipsis;
             position: relative;
             z-index: 5;
             white-space: nowrap;
@@ -59,8 +58,6 @@
             transition: all 400ms ease;
           }
           h2 {
-            // font-family: Montserrat, sans-serif;
-            // text-overflow: clip;
             font-size: 36px;
             text-transform: uppercase;
             margin-bottom: 2px;
@@ -93,10 +90,18 @@
 }
 @media screen and (max-width: 600px) {
 
-#accordion { height: auto; }
+#accordion {
+  height: auto;
+  a {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
 
 #accordion ul li .block a {
-  h2 { top: 87px; font-size: 28px; }
+  * {
+    opacity: 1;
+  }
+  h2 { top: 87px; font-size: 21px; }
   p { top: 90px; }
 }
 

@@ -12,15 +12,6 @@ $(document).ready(function() {
     removeIntroButtons();
   });
 
-  // watch intro video
-  // $(".watch").click(function(e) {
-  //   e.preventDefault();
-  //   removeIntroButtons();
-  //   var videoSrc = $("#intro-video").attr('src');
-  //   // start autoplay
-  //   $("#intro-video").attr('src', videoSrc  + "&autoplay=1");
-  // });
-
   // scroll down to main section
   $(".continue").click(function(e) {
     e.preventDefault();

@@ -4,7 +4,6 @@
   .inner {
     max-width: 748px;
     margin: 0 auto;
-    // padding-top: 15vh;
     padding: 15vh 15px 0 15px;
     h2 {
       text-align: center;
@@ -14,11 +13,9 @@
     }
     .brand-logo {
       display: inline-block;
-      // width: auto;
       width: 100px;
       height: 58px;
-      // margin: 16px 14px 16px 0;
-      margin: 16px 6px 16px 13px;
+      margin: 16px 5px 16px 5px;
     }
   }
 }
