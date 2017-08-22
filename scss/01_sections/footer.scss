@@ -28,3 +28,18 @@
     }
   }
 }
+@media screen and (max-width: 600px) {
+  #footer {
+    height: auto;
+    .inner {
+      .telephone,
+      .info,
+      .hours,
+      .soc {
+        width: 100%;
+        margin: 12px 0 0 0;
+        float: none;
+      }
+    }
+  }
+}

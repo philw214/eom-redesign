@@ -109,24 +109,28 @@ a {
   width: 100%;
   position: relative; }
   .intro-container .intro-button {
+    height: 60px;
+    width: 200px;
     max-width: 180px;
     text-align: center;
     position: relative;
     left: 15%;
     bottom: 30%;
-    padding: 20px;
+    padding: 0;
     background: rgba(255, 255, 255, 0.8);
     border: none;
     z-index: 4; }
     .intro-container .intro-button.continue {
       bottom: 20%; }
     .intro-container .intro-button a {
-      font-size: 20px;
-      font-weight: 600;
-      color: #0B8A97;
+      padding: 20px;
       display: block;
       height: 100%;
       width: 100%; }
+      .intro-container .intro-button a h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #0B8A97; }
 
 header {
   z-index: 4; }
@@ -168,6 +172,11 @@ body.down header.clone {
           color: #0096B4;
           transition: color 0.2s; }
 
+@media screen and (max-width: 600px) {
+  body.down header.clone .header-container .logo {
+    width: 200px; }
+  body.down header.clone .header-container nav a {
+    font-size: 11px; } }
 #main-content {
   padding-top: 20px;
   background: #000; }
@@ -285,13 +294,34 @@ body.down header.clone {
             -webkit-transform: translateX(0);
             transform: translateX(0); }
 
+@media screen and (max-width: 600px) {
+  #accordion {
+    height: auto; }
+
+  #accordion ul li .block a h2 {
+    top: 87px;
+    font-size: 28px; }
+  #accordion ul li .block a p {
+    top: 90px; }
+
+  #accordion ul li,
+  #accordion ul li:hover,
+  #accordion ul:hover li,
+  #accordion ul:hover li:hover {
+    position: relative;
+    height: 200px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none; } }
 .brands {
-  height: 500px;
+  min-height: 500px;
   background-image: url(../assets/bg_wood.jpg); }
   .brands .inner {
     max-width: 748px;
     margin: 0 auto;
-    padding-top: 15vh; }
+    padding: 15vh 15px 0 15px; }
     .brands .inner h2 {
       text-align: center;
       font-size: 34px;
@@ -299,9 +329,9 @@ body.down header.clone {
       text-transform: uppercase; }
     .brands .inner .brand-logo {
       display: inline-block;
-      width: auto;
+      width: 100px;
       height: 58px;
-      margin: 16px 14px 16px 0; }
+      margin: 16px 6px 16px 13px; }
 
 #footer {
   width: 100%;
@@ -325,5 +355,16 @@ body.down header.clone {
       margin-top: -9px; }
     #footer .inner .copyright {
       text-align: center; }
+
+@media screen and (max-width: 600px) {
+  #footer {
+    height: auto; }
+    #footer .inner .telephone,
+    #footer .inner .info,
+    #footer .inner .hours,
+    #footer .inner .soc {
+      width: 100%;
+      margin: 12px 0 0 0;
+      float: none; } }
 
 /*# sourceMappingURL=styles.css.map */

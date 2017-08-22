@@ -49,3 +49,14 @@ body.down header.clone {
       }
     }
 }
+
+@media screen and (max-width: 600px) {
+  body.down header.clone .header-container {
+    .logo {
+      width: 200px;
+    }
+    nav a {
+      font-size: 11px;
+    }
+  }
+}

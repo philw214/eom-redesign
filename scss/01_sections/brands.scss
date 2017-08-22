@@ -1,10 +1,11 @@
 .brands {
-  height: 500px;
+  min-height: 500px;
   background-image: url(../assets/bg_wood.jpg);
   .inner {
     max-width: 748px;
     margin: 0 auto;
-    padding-top: 15vh;
+    // padding-top: 15vh;
+    padding: 15vh 15px 0 15px;
     h2 {
       text-align: center;
       font-size: 34px;
@@ -13,9 +14,11 @@
     }
     .brand-logo {
       display: inline-block;
-      width: auto;
+      // width: auto;
+      width: 100px;
       height: 58px;
-      margin: 16px 14px 16px 0;
+      // margin: 16px 14px 16px 0;
+      margin: 16px 6px 16px 13px;
     }
   }
 }

@@ -91,3 +91,26 @@
     }
   }
 }
+@media screen and (max-width: 600px) {
+
+#accordion { height: auto; }
+
+#accordion ul li .block a {
+  h2 { top: 87px; font-size: 28px; }
+  p { top: 90px; }
+}
+
+#accordion ul li,
+#accordion ul li:hover,
+#accordion ul:hover li,
+#accordion ul:hover li:hover {
+  position: relative;
+  height: 200px;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  -webkit-transition: none;
+  transition: none;
+}
+
+}
