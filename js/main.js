@@ -8,6 +8,12 @@ $(document).ready(function() {
     $("body").toggleClass("down", (fromTop > 810));
   });
 
+  // hamburger menu
+  $('.menu-toggle').click(function() {
+    $('ul').toggleClass('closed');
+    $(this).toggleClass('open');
+  });
+
   $("#intro-video").click(function(){
     removeIntroButtons();
   });
